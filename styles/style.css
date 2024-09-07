@@ -528,3 +528,6 @@ hr {
 }
 
 
+#en_menu_item{
+  border-left: none;
+}
