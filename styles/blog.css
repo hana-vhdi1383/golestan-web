@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  
   margin: 0 auto;
 }
 
@@ -28,7 +28,7 @@ header {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 9999;
   img {
@@ -76,12 +76,18 @@ header {
 .veblog{
 display:flex;
 align-items: center;
-margin-top: 100px;
+margin: 0 auto;
+padding-left: 300px;
+
+
 .vebloginfo{
   color: red;
+  
 }
 }
-
+.container{
+  padding: 100px;
+}
 .veblog__title {
   color: red;
 }
