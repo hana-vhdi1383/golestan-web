@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  
   margin: 0 auto;
 }
 
@@ -28,7 +28,7 @@ header {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 9999;
   img {
@@ -76,12 +76,18 @@ header {
 .veblog{
 display:flex;
 align-items: center;
-margin-top: 100px;
+margin: 0 auto;
+padding-left: 300px;
+
+
 .vebloginfo{
   color: red;
+  
 }
 }
-
+.container{
+  /* padding: 100px; */
+}
 .veblog__title {
   color: red;
 }
@@ -144,102 +150,109 @@ margin-top: 100px;
         }
         }
       }
-    
+      .soshial {
+        width: 100%;
+        height: 95px;
+        background-color: #eeefef;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        transition: all 100ms ease-in;
+        .soshialbox {
+          width: 55px;
+          height: 55px;
+          border-radius: 100%;
+          transition: all 100ms ease-in;
+        }
+        .facebookeicon {
+          background-image: url(../icon/image/facebook.png);
+          &:hover {
+            background-image: url(../icon/image/facebookcolor.png);
+          }
+        }
+        .linkdinicon {
+          background-image: url(../icon/image/linkdin.png);
+          &:hover {
+            background-image: url(../icon/image/linkdincolor.png);
+          }
+        }
+        .instagramicon {
+          background-image: url(../icon/image/instagram.png);
+          &:hover {
+            background-image: url(../icon/image/instagramcolor.png);
+          }
+        }
+        .telegramicon {
+          background-image: url(../icon/image/telegram.png);
+          &:hover {
+            background-image: url(../icon/image/telegramcolor.png);
+          }
+        }
+        .aparaticon {
+          background-image: url(../icon/image/aparat.png);
+          &:hover {
+            background-image: url(../icon/image/aparatcolor.png);
+          }
+        }
+        .glicon {
+          background-image: url(../icon/image/gl.png);
+          &:hover {
+            background-image: url(../icon/image/glcolor.png);
+          }
+        }
+      }
+      .icon{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        padding: 20PX;
+        a {
+          text-decoration: none;
+        }
+        hr{
+          color: #4a4a4a;
+          
+          width: 300px;
+          height: 1.5px;
+         
+        
+            }
+        h2{
+          color: #FFFF;
+          padding: 10PX;
+          
+        }
+        p{
+          color: #bcbecb;
+          padding: 2PX;
+          padding-bottom: 10px;
+          &:hover {
+            color: white;
+           
+           
+          }}}
+       
+       .end{
+        display: flex;
+        flex-direction: column;
+       
+        align-items: center;
+        background-color: black;
+      
+        h2,p{
+          color:#9F9F9F;
+       
+          
+        }
+       }
   
   
-
-.soshial {
-  width: 100%;
-  height: 95px;
-  background-color: #eeefef;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  transition: all 100ms ease-in;
-  .soshialbox {
-    width: 55px;
-    height: 55px;
-    border-radius: 100%;
-  }
-  .facebookeicon {
-    background-image: url(../icon/image/facebook.png);
-    &:hover {
-      background-image: url(../icon/image/facebookcolor.png);
-    }
-  }
-  .linkdinicon {
-    background-image: url(../icon/image/linkdin.png);
-    &:hover {
-      background-image: url(../icon/image/linkdincolor.png);
-    }
-  }
-  .instagramicon {
-    background-image: url(../icon/image/instagram.png);
-    &:hover {
-      background-image: url(../icon/image/instagramcolor.png);
-    }
-  }
-  .telegramicon {
-    background-image: url(../icon/image/telegram.png);
-    &:hover {
-      background-image: url(../icon/image/telegramcolor.png);
-    }
-  }
-  .aparaticon {
-    background-image: url(../icon/image/aparat.png);
-    &:hover {
-      background-image: url(../icon/image/aparatcolor.png);
-    }
-  }
-  .glicon {
-    background-image: url(../icon/image/gl.png);
-    &:hover {
-      background-image: url(../icon/image/glcolor.png);
-    }
-  }
+#main-page{
+  padding: 100px;
+  margin-top: 50px;
 }
 
-.icon{
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  padding: 20PX;
-  a {
-    text-decoration: none;
-  }
-  hr{
-    color: #4a4a4a;
-    
-    width: 300px;
-    height: 1.5px;
-   
-  
-      }
-  h2{
-    color: #FFFF;
-    padding: 10PX;
-    
-  }
-  p{
-    color: #bcbecb;
-    padding: 2PX;
-    padding-bottom: 10px;
-    &:hover {
-      color: white;
-     
-     
-    }}}
- 
- .end{
-  display: flex;
-  flex-direction: column;
- 
-  align-items: center;
-  background-color: black;
-  h2,p{
-    color:#9F9F9F;
- 
-    
-  }
- }
+#en_menu_item{
+  border-left: none;
+}
