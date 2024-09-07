@@ -370,3 +370,7 @@ margin: 20px 0;
     
   }
  }
+
+ #en_menu_item{
+  border-left: none;
+}
